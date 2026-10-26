@@ -1,46 +1,15 @@
-# Broken Access Control — Lab Notes
-
-## Overview
-
-**Platform:** PortSwigger Web Security Academy
-**Topic:** Broken Access Control
-**Lab status:** Completed / In Progress
-
-## Objective
-
-Understand how broken access control can allow a user to access resources or perform actions they should not be authorized to access.
-
-## Tools Used
-
-* Burp Suite Community Edition
-* Web browser
-
-## Methodology
-
-1. Read the lab description and identify the access-control objective.
-2. Observe the application's normal behavior.
-3. Inspect relevant HTTP requests and responses using Burp Suite.
-4. Test the authorization behavior within the lab's permitted scope.
-5. Record the observed result and compare it with the expected behavior.
-
 ## Observations
 
-Add the specific requests, responses, and behavior you observed in your completed lab. Do not invent results.
+During authorized practice in PortSwigger Web Security Academy, I explored several web application security weaknesses:
 
-## Impact
+* **Broken Access Control:** Investigated how insufficient authorization checks can allow users to access restricted functionality.
+* **IDOR (Insecure Direct Object Reference):** Explored how changing an object identifier may expose another user's information when server-side authorization checks are missing.
+* **Role and Cookie Manipulation:** Practised examining how role-related cookie values can affect access decisions in a controlled lab.
+* **Authentication Issues:** Explored weaknesses in authentication-related mechanisms through guided security exercises.
 
-Explain what an attacker could potentially access or change if this weakness existed in a real application.
+## Key Learnings
 
-## Remediation
-
-* Enforce authorization checks on the server for every protected resource and action.
-* Verify that users can access only the resources and functions permitted by their roles.
-* Test access-control rules with different user roles.
-
-## Key Takeaways
-
-Write 2–3 things you learned from completing the lab.
-
-## References
-
-* PortSwigger Web Security Academy — Access Control
+* Authentication confirms who a user is; authorization determines what that user can access.
+* Applications should enforce access-control checks on the server.
+* HTTP requests and responses can reveal useful evidence during security testing.
+* Clear documentation helps explain vulnerabilities, their impact, and possible mitigations.
