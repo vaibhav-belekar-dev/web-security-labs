@@ -1,0 +1,43 @@
+# Authentication Security — Lab Notes
+
+## Overview
+
+* **Platform:** PortSwigger Web Security Academy
+* **Topic:** Authentication Security
+* **Environment:** Authorized training lab
+
+## Objective
+
+Understand common weaknesses in authentication mechanisms and how they can affect application security.
+
+## Tools Used
+
+* Web browser
+* Burp Suite Community Edition
+
+## Methodology
+
+1. Read the lab description and identify the authentication mechanism being tested.
+2. Observe the application's normal login behavior.
+3. Inspect relevant HTTP requests and responses.
+4. Perform only the tests permitted by the authorized lab.
+5. Record the observed results and compare them with the expected behavior.
+
+## Findings
+
+Document the specific authentication weakness you observed, how you identified it, and the result of the lab.
+
+## Potential Impact
+
+Authentication weaknesses may allow unauthorized account access or compromise account security, depending on the vulnerability.
+
+## Remediation
+
+* Apply appropriate protections against automated login attempts.
+* Use secure session management practices.
+* Validate authentication-related inputs and enforce server-side security controls.
+* Monitor suspicious authentication activity.
+
+## Key Takeaways
+
+Add two or three lessons learned from your completed lab.
